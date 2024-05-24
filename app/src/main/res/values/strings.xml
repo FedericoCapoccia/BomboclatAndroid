@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BomboclatClient</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="submit">Submit</string>
+    <string name="pick_date">Pick Date</string>
+</resources>
