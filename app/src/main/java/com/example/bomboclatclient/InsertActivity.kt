@@ -25,7 +25,9 @@ class InsertActivity : AppCompatActivity() {
             }
 
             val queue = Volley.newRequestQueue(this)
-            val url = "http://192.168.188.31:5000/api/persone"
+            //val url = "http://192.168.188.31:5000/api/persone"
+            //val url = "http://10.0.2.2:5000/api/persone"
+            val url = "http://10.0.2.131:5000/api/persone"
             val body = JSONObject()
             body.put("nome", nome)
             body.put("cognome", cognome)
