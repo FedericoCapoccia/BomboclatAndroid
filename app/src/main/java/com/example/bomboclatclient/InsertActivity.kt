@@ -24,7 +24,7 @@ class InsertActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val queue = Volley.newRequestQueue(this)
+            //val queue = VolleySingleton.getInstance(this.applicationContext).requestQueue;
             //val url = "http://192.168.188.31:5000/api/persone"
             //val url = "http://10.0.2.2:5000/api/persone"
             val url = "http://10.0.2.131:5000/api/persone"
@@ -38,7 +38,8 @@ class InsertActivity : AppCompatActivity() {
             }, { error ->
                 Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show()
             })
-            queue.add(request)
+            VolleySingleton.getInstance(this).addToRequestQueue(request)
+            //queue.add(request)
         }
     }
 }
